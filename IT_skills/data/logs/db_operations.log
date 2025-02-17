@@ -1,0 +1,4 @@
+2025-02-07 15:55:53,252 - Database and tables created successfully.
+2025-02-07 15:58:07,439 - Database and tables created successfully.
+2025-02-07 15:58:07,456 - Error inserting record into groups: UNIQUE constraint failed: groups.groupname
+2025-02-07 15:58:07,468 - Data loaded from JSON files successfully.

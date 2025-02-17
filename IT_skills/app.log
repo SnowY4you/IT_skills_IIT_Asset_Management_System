@@ -1,0 +1,24 @@
+2025-02-17 16:52:47, DEBUG - <module> - [app.py:20] - This is a debug log
+2025-02-17 16:52:47, INFO - <module> - [app.py:21] - This is an info log
+2025-02-17 16:52:47, CRITICAL - <module> - [app.py:22] - This is critical
+2025-02-17 16:52:47, ERROR - <module> - [app.py:23] - An error occurred
+2025-02-17 16:52:47, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'IHDR' 16 13
+2025-02-17 16:52:47, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'pHYs' 41 9
+2025-02-17 16:52:47, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'iTXt' 62 1183
+2025-02-17 16:52:47, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'IDAT' 1257 17114
+2025-02-17 16:53:06, DEBUG - <module> - [app.py:20] - This is a debug log
+2025-02-17 16:53:06, INFO - <module> - [app.py:21] - This is an info log
+2025-02-17 16:53:06, CRITICAL - <module> - [app.py:22] - This is critical
+2025-02-17 16:53:06, ERROR - <module> - [app.py:23] - An error occurred
+2025-02-17 16:53:06, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'IHDR' 16 13
+2025-02-17 16:53:06, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'pHYs' 41 9
+2025-02-17 16:53:06, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'iTXt' 62 1183
+2025-02-17 16:53:06, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'IDAT' 1257 17114
+2025-02-17 16:53:22, DEBUG - <module> - [app.py:20] - This is a debug log
+2025-02-17 16:53:22, INFO - <module> - [app.py:21] - This is an info log
+2025-02-17 16:53:22, CRITICAL - <module> - [app.py:22] - This is critical
+2025-02-17 16:53:22, ERROR - <module> - [app.py:23] - An error occurred
+2025-02-17 16:53:22, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'IHDR' 16 13
+2025-02-17 16:53:22, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'pHYs' 41 9
+2025-02-17 16:53:22, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'iTXt' 62 1183
+2025-02-17 16:53:22, DEBUG - call - [PngImagePlugin.py:197] - STREAM b'IDAT' 1257 17114
