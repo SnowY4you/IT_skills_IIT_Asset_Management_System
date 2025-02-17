@@ -1,4 +1,4 @@
-<img src="IT_skills/savvy_trixie.jpg" alt="Savvy Trixie" style="float: right; margin: 4px;">
+<div style="float: right; width: 40px; height: 40px; margin-left: 10px;">  <img src="https://github.com/SnowY4you/IT_skills_IIT_Asset_Management_System/blob/master/IT_skills/savvy_trixie.jpg" alt="Savvy Trixie" style="width: 20%; height: 20%;">  </div>
 
 # IT Assets Management System     
 ## Overview
