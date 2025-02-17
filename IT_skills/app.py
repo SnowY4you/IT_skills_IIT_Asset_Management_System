@@ -71,7 +71,7 @@ def on_search():
                 l.hostname AS laptop_hostname, l.serial_number, l.type, l.product, l.operating_system, l.processor, l.graphic_card, l.memory, l.storage, l.ip AS laptop_ip, l.mac AS laptop_mac, l.assigned_user,
                 g.group_id, g.type AS group_type, g.name AS group_name,
                 im.ip, im.mac,
-                s.hostname AS server_hostname, s.type AS server_type, s.product AS server_product, s.ip AS server_ip,
+                s.hostname AS server_hostname, s.type AS server_type, s.product AS server_product, s.ip AS server_ip, s.location AS server_location,
                 ug.member, ug.group_id AS ug_group_id, ug.member_type
             FROM users u
             LEFT JOIN laptops l ON u.userid = l.assigned_user
@@ -107,13 +107,14 @@ def on_search():
                 s.hostname LIKE ? OR
                 s.type LIKE ? OR
                 s.product LIKE ? OR
+                s.location LIKE ? OR
                 s.ip LIKE ?;
             """
 
     search_pattern = f"%{search_text}%"
     log_and_print(f"Searching for '{search_text}'...")
 
-    cursor.execute(query, (search_pattern,) * 28)
+    cursor.execute(query, (search_pattern,) * 29)
     results = cursor.fetchall()
 
     conn.close()
@@ -154,6 +155,7 @@ def on_search():
             server_ip = row_data.get("server_ip")
             laptop_mac = row_data.get("laptop_mac")
             assigned_user = row_data.get("assigned_user")
+            server_location = row_data.get("location")
 
             group_id = row_data.get("group_id")
             group_type = row_data.get("group_type")
@@ -217,6 +219,8 @@ def on_search():
                 output_text.insert(tk.END, f"{laptop_mac or mac}\n")
                 output_text.insert(tk.END, "Assigned user: ", "bold")
                 output_text.insert(tk.END, f"{assigned_user or user_id}\n\n")
+                output_text.insert(tk.END, "Location: ", "bold")
+                output_text.insert(tk.END, f"{server_location}\n\n")
 
                 output_text.insert(tk.END, "------------------------------------\n\n")
                 printed_laptops.add(laptop_hostname)
