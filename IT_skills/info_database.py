@@ -17,11 +17,11 @@ def log_and_print(message):
 
 # Function to load data from JSON file
 json_files = {
-    "groups": "C:\\Users\\svanb\\OneDrive\\Python\\Automation\\IT_skills\\data\\groups.json",
-    "users": "C:\\Users\\svanb\\OneDrive\\Python\\Automation\\IT_skills\\data\\users.json",
-    "laptops": "C:\\Users\\svanb\\OneDrive\\Python\\Automation\\IT_skills\\data\\laptops.json",
-    "hosts": "C:\\Users\\svanb\\OneDrive\\Python\\Automation\\IT_skills\\data\\hosts.json",
-    "ip_mac": "C:\\Users\\svanb\\OneDrive\\Python\\Automation\\IT_skills\\data\\ip_mac.json"
+    "groups": "IT_skills\\data\\groups.json",
+    "users": "IT_skills\\data\\users.json",
+    "laptops": "IT_skills\\data\\laptops.json",
+    "hosts": "IT_skills\\data\\hosts.json",
+    "ip_mac": "IT_skills\\data\\ip_mac.json"
 }
 
 def load_data(json_file):
@@ -93,6 +93,7 @@ def create_database(db_name):
             type TEXT,
             product TEXT,
             ip TEXT,
+            location TEXT,
             FOREIGN KEY (ip) REFERENCES ip_mac(ip) ON UPDATE CASCADE ON DELETE SET NULL
         )
     """)
